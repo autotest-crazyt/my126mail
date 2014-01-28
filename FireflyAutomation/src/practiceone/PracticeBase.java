@@ -6,12 +6,12 @@ import org.testng.annotations.*;
 public class PracticeBase {
     @BeforeTest
     public void beforeTest(){
-    	System.out.println("beforeTestbase1");
+    	System.out.println("beforeTestbase12");
     }
     
     @AfterTest
     public void afterTest(){
-    	System.out.println("afterTestbase1");
+    	System.out.println("afterTestbase12");
     }
     
     @BeforeSuite
