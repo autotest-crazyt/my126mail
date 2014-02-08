@@ -13,6 +13,7 @@ public class ParseProperties {
 	
 	public  ParseProperties(String propertiespath){		
 		this.loadProperties(propertiespath);
+		
 	}
 	
 	

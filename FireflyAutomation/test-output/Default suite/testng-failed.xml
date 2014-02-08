@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practicetwo.LaunchFF">
+      <class name="practicefour.Practice1OnTestNG">
         <methods>
-          <include name="searchOnBaidu"/>
-          <include name="startFirefox"/>
-          <include name="releaseFFDriver"/>
+          <include name="test" invocation-numbers="0"/>
         </methods>
-      </class> <!-- practicetwo.LaunchFF -->
+      </class> <!-- practicefour.Practice1OnTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

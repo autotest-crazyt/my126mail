@@ -5,12 +5,12 @@ import org.testng.annotations.*;
 public class Practice2OnTestng {
     @BeforeClass
     public void beforeClass(){
-    	System.out.println("beforeClass");
+    	System.out.println("beforeClass2");
     }
     
     @BeforeMethod
     public void beforeMethod(){
-    	System.out.println("beforeMethod");
+    	System.out.println("beforeMethod2");
     }
     
     @Test
@@ -27,12 +27,12 @@ public class Practice2OnTestng {
     
     @AfterMethod
     public void afterMethod(){
-    	System.out.println("afterMethod");
+    	System.out.println("afterMethod2");
     }
     
     @AfterClass
     public void afterClass(){
-    	System.out.println("afterClass");
+    	System.out.println("afterClass2");
     }
     
 }

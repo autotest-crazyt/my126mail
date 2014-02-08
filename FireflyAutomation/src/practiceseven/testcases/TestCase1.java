@@ -46,7 +46,7 @@ public class TestCase1 {
 		
 		@Test
 		public void regAccount(){
-			//Wait wait = new Wait(ffwb);
+			// Wait wait = new Wait(ffwb);
 			//ffwb.get("http://www.jd.com/");
 			RegisterOnJD reg = new RegisterOnJD(ffwb);
 			HomePage homepage = new HomePage(ffwb);

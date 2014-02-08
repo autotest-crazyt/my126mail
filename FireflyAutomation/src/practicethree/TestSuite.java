@@ -18,6 +18,7 @@ public class TestSuite {
 	private String projectpath = System.getProperty("user.dir");
 	
 	
+	
 	@BeforeSuite
 	public void startFirefox(){
 		File firebug = new File(projectpath+"/tool/firebug-1.12.1-fx.xpi");
@@ -28,6 +29,8 @@ public class TestSuite {
 			firefoxprofile.addExtension(firepath);
 			firefoxprofile.setPreference("webdriver.accept.untrusted.certs", "true"); 
 			firefoxprofile.setPreference("extensions.firebug.currentVersion", "1.12.1");
+			
+			
 			ffwb = new FirefoxDriver(firefoxprofile);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -37,7 +40,9 @@ public class TestSuite {
 	
 	@BeforeTest
 	public void login(){
-		ffwb.get("http://www.126.com/");		
+		
+		ffwb.get("http://www.126.com/");	
+		
 		ffwb.findElement(By.xpath("//input[@id='idInput']")).clear();
 		ffwb.findElement(By.xpath("//input[@id='idInput']")).sendKeys("FireflyAutomation");
 		ffwb.findElement(By.xpath("//input[@id='pwdInput']")).sendKeys("Firefly");
