@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import bin.MouseAction;
+
 public class My126InBoxPage {
 	private WebDriver driver;
 	
@@ -17,14 +19,14 @@ public class My126InBoxPage {
 	@FindBy(xpath="//li[contains(@title,'收件箱')]")
 	private WebElement inBoxTab;
 	
-	@FindBy(xpath="//li[contains(@title,'收件箱')]/@aria-selected")
+	@FindBy(xpath="//li[contains(@title,'收件箱') and @aria-selected='true']")
 	private WebElement inBoxTabAriaValue;
 	
 	
-	@FindBy(xpath="//div[@style='']/descendant::span[contains(text(),'标记为')]")
+	@FindBy(xpath="//div[@id='_dvModuleContainer_mbox.ListModule_0']/descendant::span[contains(text(),'标记为')]")
 	private WebElement inBoxBj;
 	
-	@FindBy(xpath="//span[contains(text(),'全部设为')]")
+	@FindBy(xpath="//div[@id='_mail_menu_65_384']/descendant::span[contains(text(),'全部')]")
 	private WebElement allSetReaded;
 	
 	//邮件列表
@@ -37,10 +39,20 @@ public class My126InBoxPage {
 	}
 	
 	public void inBoxClick(){
+		System.out.println("123123");
 		this.inBox.click();
 		//(new WebDriverWait(this.driver,10)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@title,'收件箱')]")));
 		//(new WebDriverWait(this.driver,10)).until(ExpectedConditions.elementSelectionStateToBe(inBoxTab, this.inBoxTab.getAttribute("aria-selected").contains("true")));
-		(new WebDriverWait(this.driver,10)).until(ExpectedConditions.textToBePresentInElementValue(inBoxTabAriaValue, "true"));
+//		
+//		(new WebDriverWait(this.driver,10)).until(ExpectedConditions.elementToBeClickable(this.inBoxTabAriaValue));
+//		(new WebDriverWait(this.driver,10)).until(ExpectedConditions.elementToBeClickable(this.inBoxBj));
+	}
+	
+	public void inBoxRightClick(){
+		MouseAction ma=new MouseAction();
+		ma.mouseRightclickContext(this.driver, this.inBox);
+		new WebDriverWait(this.driver,5).until(ExpectedConditions.elementToBeClickable(this.allSetReaded));
+		
 	}
 	
 	public void inBoxBjClick(){
@@ -50,11 +62,11 @@ public class My126InBoxPage {
 	
 	public void allSetReadedClick(){
 		this.allSetReaded.click();
-		for (WebElement i : Whetherreaded){
-			if(i.getAttribute("class").contains("true")){
-				System.out.println("该邮件已读");
-			}
-		}
+//		for (WebElement i : Whetherreaded){
+//			
+//				System.out.println(i+"该邮件已读");
+//			
+//		}
 	}
 	
 

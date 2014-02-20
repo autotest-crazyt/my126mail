@@ -69,11 +69,11 @@ public class DriverBulidBeforAndAfterSuite {
 		ffwb.close();
 	}
 	
-	@Test
-	public void testStart(){
-		ffwb.get("http://www.baidu.com");
-
-		System.out.println("fuck!");
-	}
+//	@Test
+//	public void testStart(){
+//		ffwb.get("http://www.baidu.com");
+//
+//		System.out.println("StartOK!");
+//	}
 	
 }

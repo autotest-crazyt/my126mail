@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Test126.SendMail">
+      <class name="Test126.My126InBoxWorkers">
         <methods>
           <include name="driverBulid"/>
           <include name="login"/>
           <include name="logOut126"/>
-          <include name="sendMail"/>
           <include name="driverStop"/>
+          <include name="allMailReaded"/>
         </methods>
-      </class> <!-- Test126.SendMail -->
+      </class> <!-- Test126.My126InBoxWorkers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
