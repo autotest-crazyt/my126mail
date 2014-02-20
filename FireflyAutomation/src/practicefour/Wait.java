@@ -17,7 +17,7 @@ public class Wait {
 		this.driver = driver;	
         PageFactory .initElements(driver, this);		
 	}
-	
+	//等待元素出现或者最多等待10秒
 	public void waitForElementPresent(String locator){
 		(new WebDriverWait(driver, 10000)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 	}
@@ -25,11 +25,12 @@ public class Wait {
 	
 
 	
-	
+	//等待元素可以被点击或者最多等待10秒
 	public void waitForElementIsEnable(String locator){
 		(new WebDriverWait(driver, 10000)).until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 	}
 	
+	//等待确定的时间
 	public void waitFor(long timeout){
 		try {
 			Thread.sleep(timeout);

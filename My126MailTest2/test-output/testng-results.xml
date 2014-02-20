@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6" started-at="2014-02-19T08:00:37Z" finished-at="2014-02-19T08:00:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6" started-at="2014-02-19T08:00:37Z" finished-at="2014-02-19T08:00:37Z">
+      <class name="Test126.DriverBulidBeforAndAfterSuite">
+        <test-method status="PASS" signature="driverBulid()[pri:0, instance:Test126.DriverBulidBeforAndAfterSuite@6f5fc793]" name="driverBulid" is-config="true" duration-ms="5836" started-at="2014-02-19T16:00:31Z" finished-at="2014-02-19T16:00:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverBulid -->
+        <test-method status="PASS" signature="driverStop()[pri:0, instance:Test126.DriverBulidBeforAndAfterSuite@6f5fc793]" name="driverStop" is-config="true" duration-ms="6" started-at="2014-02-19T16:00:37Z" finished-at="2014-02-19T16:00:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverStop -->
+      </class> <!-- Test126.DriverBulidBeforAndAfterSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
