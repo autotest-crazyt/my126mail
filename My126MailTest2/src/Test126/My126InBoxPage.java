@@ -13,7 +13,7 @@ import bin.MouseAction;
 public class My126InBoxPage {
 	private WebDriver driver;
 	
-	@FindBy(xpath="//span[@title='收件箱']")
+	@FindBy(xpath="//div[@id='_mail_component_2_2']/span")
 	private WebElement inBox;
 	
 	@FindBy(xpath="//li[contains(@title,'收件箱')]")
@@ -40,7 +40,15 @@ public class My126InBoxPage {
 	
 	public void inBoxClick(){
 		System.out.println("123123");
+		
 		this.inBox.click();
+		try {
+			System.out.println("aaaa");
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//(new WebDriverWait(this.driver,10)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@title,'收件箱')]")));
 		//(new WebDriverWait(this.driver,10)).until(ExpectedConditions.elementSelectionStateToBe(inBoxTab, this.inBoxTab.getAttribute("aria-selected").contains("true")));
 //		

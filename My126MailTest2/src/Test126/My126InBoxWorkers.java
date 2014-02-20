@@ -7,9 +7,15 @@ public class My126InBoxWorkers extends LoginAndLogOut126BeforAndAfterTest{
 	@Test//全部标记为已读
 	public void allMailReaded(){
 		
-		inBoxPage.inBoxClick();
-		inBoxPage.inBoxRightClick();
-		inBoxPage.allSetReadedClick();
+		this.inBoxPage.inBoxClick();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		this.inBoxPage.inBoxRightClick();
+		this.inBoxPage.allSetReadedClick();
 		
 	}
 	

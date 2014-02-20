@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66017" started-at="2014-02-20T07:10:32Z" finished-at="2014-02-20T07:11:38Z">
+  <suite name="Default suite" duration-ms="28740" started-at="2014-02-20T07:27:39Z" finished-at="2014-02-20T07:28:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66017" started-at="2014-02-20T07:10:32Z" finished-at="2014-02-20T07:11:38Z">
+    <test name="Default test" duration-ms="28740" started-at="2014-02-20T07:27:39Z" finished-at="2014-02-20T07:28:08Z">
       <class name="Test126.My126InBoxWorkers">
-        <test-method status="PASS" signature="driverBulid()[pri:0, instance:Test126.My126InBoxWorkers@5870501]" name="driverBulid" is-config="true" duration-ms="6357" started-at="2014-02-20T15:10:26Z" finished-at="2014-02-20T15:10:32Z">
+        <test-method status="PASS" signature="driverBulid()[pri:0, instance:Test126.My126InBoxWorkers@6359877c]" name="driverBulid" is-config="true" duration-ms="12125" started-at="2014-02-20T15:27:27Z" finished-at="2014-02-20T15:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverBulid -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Test126.My126InBoxWorkers@5870501]" name="login" is-config="true" duration-ms="9292" started-at="2014-02-20T15:10:32Z" finished-at="2014-02-20T15:10:41Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Test126.My126InBoxWorkers@6359877c]" name="login" is-config="true" duration-ms="8117" started-at="2014-02-20T15:27:39Z" finished-at="2014-02-20T15:27:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="allMailReaded()[pri:0, instance:Test126.My126InBoxWorkers@5870501]" name="allMailReaded" duration-ms="56143" started-at="2014-02-20T15:10:41Z" finished-at="2014-02-20T15:11:37Z">
+        <test-method status="FAIL" signature="allMailReaded()[pri:0, instance:Test126.My126InBoxWorkers@6359877c]" name="allMailReaded" duration-ms="19559" started-at="2014-02-20T15:27:47Z" finished-at="2014-02-20T15:28:07Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at Test126.My126InBoxPage.inBoxClick(My126InBoxPage.java:43)
+	at Test126.My126InBoxPage.inBoxClick(My126InBoxPage.java:44)
 	at Test126.My126InBoxWorkers.allMailReaded(My126InBoxWorkers.java:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -54,11 +54,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allMailReaded -->
-        <test-method status="PASS" signature="logOut126()[pri:0, instance:Test126.My126InBoxWorkers@5870501]" name="logOut126" is-config="true" duration-ms="562" started-at="2014-02-20T15:11:37Z" finished-at="2014-02-20T15:11:38Z">
+        <test-method status="PASS" signature="logOut126()[pri:0, instance:Test126.My126InBoxWorkers@6359877c]" name="logOut126" is-config="true" duration-ms="1045" started-at="2014-02-20T15:28:07Z" finished-at="2014-02-20T15:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut126 -->
-        <test-method status="PASS" signature="driverStop()[pri:0, instance:Test126.My126InBoxWorkers@5870501]" name="driverStop" is-config="true" duration-ms="237" started-at="2014-02-20T15:11:38Z" finished-at="2014-02-20T15:11:38Z">
+        <test-method status="PASS" signature="driverStop()[pri:0, instance:Test126.My126InBoxWorkers@6359877c]" name="driverStop" is-config="true" duration-ms="313" started-at="2014-02-20T15:28:08Z" finished-at="2014-02-20T15:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverStop -->
